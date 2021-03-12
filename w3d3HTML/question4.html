@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Calculator</title>
+  <script>
+    //console.log(firstValue, secondValue);
+    const sumNums = function () {
+      const firstValue = Number(document.getElementById("text-input1").value);
+      const secondValue = Number(document.getElementById("text-input2").value);
+      if (document.getElementById("addition")) {
+        document.getElementById("output").innerHTML = firstValue + secondValue;
+      }
+      else if (document.getElementById("multliplication")) {
+        document.getElementById("output").innerHTML = firstValue * secondValue;
+      }
+      else {
+        document.getElementById("output").innerHTML = firstValue - secondValue;
+      }
+    };
+  </script>
+</head>
+
+<body>
+
+  <div id="first-value">
+    <label for="text-input1">First value:</label>
+    <br>
+    <input type="text" id="text-input1">
+  </div>
+  <div id="second-value">
+    <label for="text-input2">Second value:</label>
+    <br>
+    <input type="text" id="text-input2">
+  </div>
+  <div id="operations">
+    <button id="addition" onclick="sumNums()">+</button>
+    <button id="multliplication" onclick="sumNums()">*</button>
+    <button id="subrtraction" onclick="sumNums()">-</button>
+  </div>
+  <div id="result">
+    <span id="output">
+
+    </span>
+  </div>
+
+</body>
+
+</html>
