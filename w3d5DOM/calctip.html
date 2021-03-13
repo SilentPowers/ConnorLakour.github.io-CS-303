@@ -8,20 +8,7 @@
 
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset=windows-1252">
-  <script>
-
-    function calcTip() {
-      const subtotalElem = document.getElementById("subtotal").value;
-      const tipElem = document.getElementById("tip").value;
-
-      var totalElem = document.getElementById('total');
-      const tip = subtotalElem * (tipElem / 100);
-      const total = tip;
-      totalElem.innerHTML = '$' + total.toFixed(2);
-    }
-    window.onload = calcTip;
-
-  </script>
+  <script src="calcTip.js" type="text/javascript"></script>
 
   <title>Tip Calculator</title>
   <link href="./Tip Calculator_files/tip.css" type="text/css" rel="stylesheet">
@@ -44,7 +31,7 @@
   </div>
 
   <div>
-    <button id="btn" onclick="calcTip();">Calculate Tip</button>
+    <button id="btn">Calculate Tip</button>
   </div>
 
   <hr>
