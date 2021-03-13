@@ -1,7 +1,7 @@
 window.onload = calcTip;
 
 function calcTip() {
-  const button = document.getElementById("btn").onclick = function(){
+  document.getElementById("btn").onclick = function(){
   const subtotalElem = document.getElementById("subtotal").value;
   const tipElem = document.getElementById("tip").value;
 
