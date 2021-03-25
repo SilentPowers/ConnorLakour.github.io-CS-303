@@ -11,7 +11,7 @@ describe("calculator from constructor function", function () {
     let calc;  
     before(function () {
         calc = new Calculator();
-        calc.setValues(2, 3);
+        calc.setValues(20, 30);
     });
 
     it("when 20 and 30 are entered, the sum is 50", function () {
@@ -32,7 +32,7 @@ Write a constructor function Accumulator(initialValue, increment).  The object i
 •	Store the current accumulated value in a property currentValue.  The constructor should set this to be initialValue.
 •	The accumulate method should increase the currentValue by the increment.
 •	The report method should return the currentValue.
-*/
+// */
 describe("accumulator", function () {
 
 

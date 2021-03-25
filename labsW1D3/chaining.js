@@ -1,6 +1,6 @@
 "use strict";
 
-//solution is to return the object for every method in the object
+//solution is to return "this" for every method in the object
 let ladder = {
   step: 0,
   up() {
