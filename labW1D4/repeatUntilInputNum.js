@@ -1,3 +1,4 @@
+"use strict";
 /*
 Create a function readNumber which prompts for a number until the visitor 
 enters a valid numeric value.
