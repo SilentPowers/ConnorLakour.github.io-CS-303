@@ -1,7 +1,7 @@
 "use strict";
 
 const assert = require("assert"); 
-const myExports = require("./calculator.js");
+const myExports = require("./hw.js");
 const calculator = myExports.calculator;
 
 describe("calculator", function() {

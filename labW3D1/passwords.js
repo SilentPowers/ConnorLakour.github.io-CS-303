@@ -75,11 +75,11 @@ let group = {
   title: "Our Group",
   students: ["John", "Pete", "Alice"],
   showList() {
-    const self = this;
-  self.students.forEach(function(student) {
-    console.log(self.title + ": " + student);
-    //this was undefined because its a  fcn, and in a regular fcn call, this is always undefined
-  });
+    //const self = this;
+  this.students.forEach(function(student) {
+    console.log(this.title + ": " + student);
+    //this was undefined because its a fcn, and in a regular fcn call, this is undefined
+  }.bind(group));
   }
  };
  group.showList();
